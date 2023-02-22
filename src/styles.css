@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+}
+/*Basic time duration*/
+:root
+{
+    --time-duration:9s;
+}
+body {
+    margin: 0px;
+}
+body::-webkit-scrollbar
+{
+    overflow:hidden;
+    display:none;
+}
+h3
+{
+    margin:0px;
+}
+/*Rod one*/
+
+#rod-one {
+    position: absolute;
+    top: 0%;
+    background-color: rgb(197, 11, 188) ;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 5vh;
+    padding:5px;
+    text-align: center;
+}
+/*Rod two*/
+
+#rod-two {
+    position: absolute;
+    bottom: 0%;
+    background-color: rgb(13, 170, 157) ;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding:5px;
+    text-align: center;
+}
+/*Ball*/
+
+#ball {
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    border-radius: 50%;
+    background-image:radial-gradient(rgba(196, 11, 20, 0.747) 20%,black 180%);
+    box-sizing: border-box;
+}
+
+/*Animations for rods */
+.animate-top-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+}
